@@ -1,0 +1,112 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+/* Navigation Menu */
+.menu-area {
+    position: fixed;
+    display: flex;
+    justify-content: space-between; /* Adjusted for proper spacing */
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Fixed invalid rgba syntax */
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+.logo {
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white; /* Ensures contrast with the dark background */
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end; /* gefixte uitlijning */
+    list-style: none;
+    margin-right: 15%;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.nav a {
+    margin: 15px;
+    color: white; /* wit voor beter zicht */
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* transitie voor het zweef effect */
+}
+
+.nav a:hover {
+    color: #f0a500; /* muis zweef effect */
+}
+
+/* de front pagina foto */
+#thuis {
+    position: relative;
+    background-image: url('rooooc.png');
+    width: 100%;
+    height: 100vh; /* de foto groter maken zodat het in het scherm past */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#thuis .content {
+    width: 80%;
+    background: rgba(0, 0, 0, 0.6); /* zwarte border zodat je de opties kan lezen */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+#thuis .content h1 {
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+#thuis .content p {
+    width: 60%; /* de breedte vergroot voor betere uitlijning */
+    margin: auto;
+    line-height: 1.6;
+    color: white; /* wit voor een betere contrast */
+}
+
+/* Over, portfolio, service, contact gedeelte */
+#over, #portfolio, #service, #contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+}
+
+.content {
+    text-align: center;
+    width: 80%;
+}
+
+.content h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px; /* text vergroten */
+    line-height: 1.8; /* beter voor het lezen */
+}
